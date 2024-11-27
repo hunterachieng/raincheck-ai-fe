@@ -27,7 +27,7 @@ export default function Home() {
       case 'flood':
         return `There is a ${Math.floor(results.Confidence * 100)}% likelihood of a flood in ${results.Country} during ${results.Month}, ${results.Year}. Please consider taking necessary precautions.`
       default:
-        return `The rainfall patterns indicate normal conditions in ${results.Country} for ${results.Month}, ${results.Year}. No significant disaster is predicted with a ${Math.floor(results.Confidence * 100)}%.`
+        return `The rainfall patterns indicate normal conditions in ${results.Country} for ${results.Month}, ${results.Year}. No significant disaster is predicted with a ${Math.floor(results.Confidence * 100)}% chance.`
     }
     
 
